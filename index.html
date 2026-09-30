@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main">
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+      <div class="sidebar-inner">
+        <img class="logo" src="./assets/side-bar/Vector.svg" alt="Instagram">
+
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item active"><img src="./assets/side-bar/Frame (1).svg" alt=""><span>Home</span></li>
+            <li class="nav-item"><img src="./assets/side-bar/Frame (2).svg" alt=""><span>Search</span></li>
+            <li class="nav-item"><img src="./assets/side-bar/Frame (3).svg" alt=""><span>Explore</span></li>
+            <li class="nav-item"><img src="./assets/side-bar/Frame (9).svg" alt=""><span>Reels</span></li>
+            <li class="nav-item"><img src="./assets/side-bar/Frame (4).svg" alt=""><span>Messages</span></li>
+            <li class="nav-item"><img src="./assets/side-bar/Frame (5).svg" alt=""><span>Notifications</span></li>
+            <li class="nav-item"><img src="./assets/side-bar/Frame (9).svg" alt=""><span>Create</span></li>
+            <li class="nav-item"><img src="./assets/side-bar/Frame (6).svg" alt=""><span>Profile</span></li>
+          </ul>
+        </nav>
+
+        <div class="more-item nav-item">
+          <img src="./assets/side-bar/Frame (7).svg" alt="">
+          <span>More</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main id="main-scrollable-container">
+      <div class="content-wrapper">
+        <section class="feed-column">
+          <!-- STORIES -->
+          <div class="stories">
+            <div class="story">
+              <div class="story-ring"><img src="https://i.pravatar.cc/100?img=12" alt="Your story"></div>
+              <span>Your story</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://i.pravatar.cc/100?img=32" alt="alex"></div>
+              <span>alex</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://i.pravatar.cc/100?img=47" alt="sara"></div>
+              <span>sara</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://i.pravatar.cc/100?img=13" alt="john"></div>
+              <span>john</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://i.pravatar.cc/100?img=44" alt="mia"></div>
+              <span>mia</span>
+            </div>
+            <div class="story">
+              <div class="story-ring"><img src="https://i.pravatar.cc/100?img=56" alt="sam"></div>
+              <span>sam</span>
+            </div>
+          </div>
+
+          <div id="posts"></div>
+          <button id="load-more">Load more</button>
+        </section>
+
+        <!-- RIGHT SIDE -->
+        <aside class="right-column">
+          <div class="profile-summary">
+            <img src="https://i.pravatar.cc/100?img=12" alt="Aryan">
+            <div>
+              <strong>aryan_singhal</strong>
+              <p>Aryan Singhal</p>
+            </div>
+            <button class="action-link">Switch</button>
+          </div>
+
+          <div class="suggestion-heading">
+            <span>Suggested for you</span>
+            <button class="action-link see-all">See All</button>
+          </div>
+
+          <div id="suggestions"></div>
+
+          <footer class="footer">
+            <p>About · Help · Press · API · Jobs · Privacy · Terms</p>
+            <p>© 2026 INSTAGRAM CLONE</p>
+          </footer>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
